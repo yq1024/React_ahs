@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+	<style>
+		* {
+          margin: 0;
+          padding: 0;
+        }
+        html, body {
+          height: 100%;
+        }
+        #body {
+          height: 100%;
+
+        }
+		    #h1 {
+			  margin-left: 50%;
+		    text-shadow:0 0 10px; 
+    		letter-spacing: 1px;   
+    		text-align: center;	 
+		    }
+	</style>
+</head>
+<body>
+<div id="body"></div>
+<div id="h1"></div>
+<div id="InpBtn"></div>
+	<script type="text/babel">
+		var bgColor = {
+      	width: '100%',
+        height: '100%',
+        margin: 0,
+        backgroundColor: '#000'
+      };
+      var Text = React.createClass({
+        render: function() {
+          return (
+            <div style={bgColor}></div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <Text/>,
+        document.getElementById('body')
+      );
+	
+
+
+
+
+
+
+
+
+
+	var hdemo = {
+		color: '#fff', 
+		fontSize: '2em',
+		position: 'absolute',
+		top: '50%',   
+    left:'50%',  
+    height: '300px' 
+	};
+	var Hdemo = React.createClass({
+		render:function(){
+		return(
+			<div style={hdemo}>迷友</div>
+			);
+		}
+	});
+	ReactDOM.render(
+		<Hdemo/>,
+		document.getElementById('h1')
+	);
+
+
+
+
+
+
+
+
+
+
+var inp ={
+    width: '278px',   
+    height: '18px',   
+    margin-bottom: '10px',   
+    outline: 'none',   
+    padding: '10px',   
+    font-size: '13px,   
+    color: '#fff',   
+    text-shadow:'1px 1px 1px', 
+    border-top: '1px solid #312E3D',   
+    border-left: '1px solid #312E3D',   
+    border-right: '1px solid #312E3D',   
+    border-bottom: '1px solid #56536A',  
+    border-radius: '4px',   
+    background-color: '#2D2D3F' 
+};
+var but ={   
+    width: '300px',  
+    min-height: '20px',
+    display: 'block',   
+    background-color: '#4a77d4',   
+    border: 1px solid '#3762bc',   
+    color: '#fff',   
+    padding: '9px 14px',   
+    font-size: '15px',   
+    line-height: 'normal',   
+    border-radius: '5px',   
+    margin: '0'  
+};
+var Inp = React.createClass({
+  render:function(){
+    return(
+      <div>
+        <Input name={this.props.name}>
+        <Input site={this.props.site}>
+        <Button btn={this.props.btn}>登录</button>
+      </div>
+    );
+  }
+});
+var Input = React.createClass({
+  render:function(){
+    return(
+      <div style={inp}></div>
+      <input type="text">{this.props.name}</Input>
+      <input type="text">{this.props.site}</Input>
+    );
+  }
+});
+var Button = React.createClass({
+  render:function(){
+    return(
+        <div style={but}></div>
+        <button btn={this.props.btn}></button>
+    );
+  }
+});
+ReactDom.render(
+  <inp/>,
+  <but/>,
+  <Web name="请输入用户名" site="请输入密码" btn="登录"/>,
+  document.getElementById('InpBtn')
+);
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- var bgColor = {
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        backgroundColor: '#000',
+        color: '#fff'
+      };
+      ReactDOM.render(
+        <div style={bgColor}>Hello, world!</div>,
+        document.getElementById('body')
+      ); -->
